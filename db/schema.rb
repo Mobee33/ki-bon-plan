@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_05_26_161431) do
 
   create_table "activities", force: :cascade do |t|
     t.text "details"
-    t.boolean "is_available", default: true
+    t.boolean "is_available"
     t.integer "price"
     t.string "address"
     t.bigint "user_id", null: false
