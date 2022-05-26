@@ -1,9 +1,27 @@
 <% @activities.each do |activity| %>
-<ul>
-<li>
-<%= activity.details %>
-<%= activity.price %>
-<%= activity.address %>
-</li>
-</ul>
+<div class="card-trip">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= activity.details %></h2>
+      <p><%= activity.details %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= activity.address%><br><%= activity.price %></h2>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <ul>
+    <li>
+    <%= activity.details %>
+    <%= activity.price %>
+    <%= activity.address %>
+    </li>
+  </ul>
 <% end %>

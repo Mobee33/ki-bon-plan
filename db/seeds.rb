@@ -3,7 +3,7 @@ require 'faker'
 puts "clearing database"
 Activity.destroy_all
 User.destroy_all
-puts "creating activity"
+puts "crreating activity"
 
 
   user1 = User.create(email: "mail@yahoo.com", password:"123456")
