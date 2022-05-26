@@ -1,9 +1,16 @@
-<% @activities.each do |activity| %>
-  <ul>
-    <li>
-    <%= link_to activity.title, activity_path(activity) %>
-    <%= activity.price %>
-    <%= activity.address %>
-    </li>
-  </ul>
-<% end %>
+<div class="row row-cols-1 row-cols-md-4 g-2">
+  <% @activities.each do |activity| %>
+    <div class="col">
+      <div class="card-trip">
+        <%= image_tag  activity.photo%>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= link_to activity.title, activity_path(activity) %></h2>
+            <p><%= activity.details %></p>
+          </div>
+          <h2 class="card-trip-pricing"><%= activity.address%><br><%= activity.price %></h2>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
