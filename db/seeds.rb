@@ -16,7 +16,7 @@ puts "crreating activity"
  6.times do
   user = [user1, user2, user3, user4, user5, user6].sample
   arr = %w(5..10).sample
-  Activity.create!(details: Faker::Games::WorldOfWarcraft.quote, address: Faker::Address.street_address, price: rand(50..80), user_id: "#{user.id}") ##DONT TOUCH THIS. CODE WILL BREAK!!!
+  Activity.create!(title: Faker::Artist.name, details: Faker::Games::WorldOfWarcraft.quote, address: Faker::Address.street_address, price: rand(50..80), user_id: "#{user.id}", photo: "https://biz30.timedoctor.com/images/2020/09/team-building-activities.jpg") ##DONT TOUCH THIS. CODE WILL BREAK!!!
 
 end
 puts "activities created"
