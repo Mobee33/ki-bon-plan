@@ -1,5 +1,7 @@
-<p><%= @activity.title %></p>
-<p><%= @activity.details %></p>
-<p><%= @activity.price %></p>
-<p><%= @activity.address %></p>
-<%= image_tag @activity.photo %>
+<div class="card_preview">
+  <p><%= @activity.title %></p>
+  <p><%= @activity.details %></p>
+  <p><%= @activity.price %></p>
+  <p><%= @activity.address %></p>
+  <%= image_tag @activity.photo %>
+</div>
