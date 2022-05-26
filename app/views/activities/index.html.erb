@@ -1,9 +1,9 @@
 <% @activities.each do |activity| %>
-<ul>
-<li>
-<%= activity.details %>
-<%= activity.price %>
-<%= activity.address %>
-</li>
-</ul>
+  <ul>
+    <li>
+    <%= link_to activity.details, activity_path(activity) %>
+    <%= activity.price %>
+    <%= activity.address %>
+    </li>
+  </ul>
 <% end %>
