@@ -1,8 +1,12 @@
 class ReviewsController < ApplicationController
+  before_action :set_activity, only: [:new, :create]
+
+  def new
+    @review = Review.new
+  end
 
   def create
     @review = Review.new(review_params)
-    @activity = Activity.find(params[:activity_id])
     @review.activity = @activity
     if @review.save
       redirect_to activity_path(@activity)
@@ -21,4 +25,9 @@ class ReviewsController < ApplicationController
   def review_params
     params.require(:review).permit(:comment, :rating)
   end
+
+  def set_activity
+    @activity = Activity.find(params[:activity_id])
+  end
+
 end

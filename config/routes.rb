@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   resources :activities do
-    resources :reviews, only: :create
+    resources :reviews, only: [:create, :new]
   end
 
   resources :reviews, only: :destroy
