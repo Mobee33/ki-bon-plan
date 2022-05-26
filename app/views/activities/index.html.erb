@@ -1,10 +1,9 @@
 <% @activities.each do |activity| %>
-<<<<<<< HEAD
 <div class="card-trip">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <%= image_tag @activity.photo %>
   <div class="card-trip-infos">
     <div>
-      <h2><%= activity.details %></h2>
+      <h2><%= activity.title %></h2>
       <p><%= activity.details %></p>
     </div>
     <h2 class="card-trip-pricing"><%= activity.address%><br><%= activity.price %></h2>
@@ -14,18 +13,13 @@
 
 
 
-
+pe
 
 
 
   <ul>
     <li>
     <%= activity.details %>
-=======
-  <ul>
-    <li>
-    <%= link_to activity.title, activity_path(activity) %>
->>>>>>> master
     <%= activity.price %>
     <%= activity.address %>
     </li>
