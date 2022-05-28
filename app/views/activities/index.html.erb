@@ -1,14 +1,14 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="grid-container">
   <% @activities.each do |activity| %>
-    <div class="col">
-      <div class="card-trip">
+    <div class="grid-item">
+      <div class="card-activity">
         <%= image_tag  activity.photo%>
-        <div class="card-trip-infos">
-          <div>
+        <div class="card-activity-infos">
+          <div class="card-activity-description">
             <h2><%= link_to activity.title, activity_path(activity) %></h2>
             <p><%= activity.details %></p>
           </div>
-          <h2 class="card-trip-pricing"><%= activity.address%><br> Rs:<%= activity.price %></h2>
+          <h2 class="card-activity-pricing"><%= activity.address%><br> Rs:<%= activity.price %></h2>
         </div>
       </div>
     </div>
