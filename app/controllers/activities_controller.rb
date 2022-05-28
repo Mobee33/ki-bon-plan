@@ -19,7 +19,6 @@ class ActivitiesController < ApplicationController
       lat: @activity.latitude,
       lng: @activity.longitude
     }]
-
   end
 
   def new
