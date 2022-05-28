@@ -11,3 +11,10 @@
   data-mapbox-markers-value="<%= @marker.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
+
+<% if current_user %>
+  <% if @activity.user.id == current_user.id %>
+    <%= link_to("Edit", edit_activity_path(@activity)) %>
+    <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>
+  <% end %>
+<% end %>
