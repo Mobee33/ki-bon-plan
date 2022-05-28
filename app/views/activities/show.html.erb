@@ -1,9 +1,15 @@
-<div class="card_preview">
-  <p><%= @activity.title %></p>
-  <p><%= @activity.details %></p>
-  <p><%= @activity.price %></p>
-  <p><%= @activity.address %></p>
-  <%= image_tag @activity.photo %>
+  <div class="card_preview">
+    <p><%= @activity.title %></p>
+    <p><%= @activity.details %></p>
+    <p><%= @activity.price %></p>
+    <p><%= @activity.address %></p>
+    <%= image_tag @activity.photo %>
+  </div>
+
+<div style="width: 100%; height: 500px;"
+  data-controller="mapbox"
+  data-mapbox-markers-value="<%= @marker.to_json %>"
+  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
 
 <% if current_user %>

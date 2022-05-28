@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_28_055724) do
+ActiveRecord::Schema.define(version: 2022_05_28_085145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "activities", force: :cascade do |t|
     t.text "details"
-    t.boolean "is_available", default: true
+    t.boolean "is_available"
     t.integer "price"
     t.string "address"
     t.bigint "user_id", null: false
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2022_05_28_055724) do
     t.string "title"
     t.string "photo"
     t.string "category"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["user_id"], name: "index_activities_on_user_id"
   end
 
