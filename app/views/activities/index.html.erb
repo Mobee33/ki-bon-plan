@@ -1,7 +1,6 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="">
   <% @activities.each do |activity| %>
-    <div class="col">
-      <div class="card-trip">
+    <div class="card-trip">
         <%= image_tag  activity.photo%>
         <div class="card-trip-infos">
           <div>
@@ -10,7 +9,6 @@
           </div>
           <h2 class="card-trip-pricing"><%= activity.address%><br> Rs:<%= activity.price %></h2>
         </div>
-      </div>
     </div>
   <% end %>
 </div>

@@ -6,6 +6,10 @@
   height: 40vh;
   margin-bottom: 12px;
   margin-top: 12px;
+  display: flex;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  // grid-gap: 16px;
 }
 
 .card-trip > img {
