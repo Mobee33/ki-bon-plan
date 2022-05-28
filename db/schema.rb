@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_05_28_085145) do
     t.string "photo"
     t.string "category"
     t.float "latitude"
-    t.float "longtitude"
+    t.float "longitude"
     t.index ["user_id"], name: "index_activities_on_user_id"
   end
 
