@@ -1,4 +1,4 @@
-<div class="grid-container">
+<div class="grid-container1">
   <% @activities.each do |activity| %>
     <div class="grid-item">
       <div class="card-activity">
@@ -10,6 +10,7 @@
           </div>
           <h2 class="card-activity-pricing"><%= activity.address%><br> Rs:<%= activity.price %></h2>
         </div>
+      </div>
     </div>
   <% end %>
 </div>
