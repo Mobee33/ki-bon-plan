@@ -14,6 +14,7 @@ class ActivitiesController < ApplicationController
 
   def create
     @activity = Activity.new(activity_params)
+    @activity.user = current_user
     if @activity.save
       redirect_to activity_path(@activity)
     else
@@ -40,7 +41,7 @@ class ActivitiesController < ApplicationController
   private
 
   def activity_params
-    params.require(:activity).permit(:details, :price, :address, user_id: current_user.id)
+    params.require(:activity).permit(:details, :price, :address, :title, :photo, :category)
   end
 
   def set_activity
