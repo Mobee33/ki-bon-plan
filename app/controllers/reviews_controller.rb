@@ -12,6 +12,7 @@ class ReviewsController < ApplicationController
       redirect_to activity_path(@activity)
     else
       render 'activities/show'
+    end
   end
 
   def destroy
@@ -29,5 +30,4 @@ class ReviewsController < ApplicationController
   def set_activity
     @activity = Activity.find(params[:activity_id])
   end
-
 end
