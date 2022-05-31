@@ -1,13 +1,20 @@
 class ReservationsController < ApplicationController
-  before_action :set_reservation, only: :create
+  before_action :set_activity, only: [:new, :create]
+
+
+  def new
+    @reservation = Reservation.new
+  end
 
   def create
     @reservation = Reservation.new(reservation_params)
     @reservation.activity = @Activity
+    @reservation.user = current_user
     if @reservation.save
       redirect_to activity_path(@activity)
     else
       render 'activities/show'
+    end
   end
 
   def destroy
@@ -22,7 +29,7 @@ class ReservationsController < ApplicationController
     params.require(:reservation).permit(:date, :number_of_people)
   end
 
-  def set_reservation
-    @reservation = Reservation.find(param[:activity_id])
+  def set_activity
+    @activity = Activity.find(params[:activity_id])
   end
 end

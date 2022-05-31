@@ -1,10 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-sm-8 col-md-4">
-      <%= simple_form_for @reservation do |f| %>
-        <%= f.input :number_of_people %>
-        <%= f.input :date %>
-        <%= f.submit "Submit", class: "btn btn-primary" %>
+     <%= simple_form_for [ @activity, @reservation ] do |f| %>
+      <%= f.input :number_of_people %>
+      <%= f.input :date,
+        :as => :date %>
+      <%= f.submit "Book reservation", class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>
