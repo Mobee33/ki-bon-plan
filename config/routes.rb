@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   resources :activities do
-    resources :reviews, only: [:new, :create]
+    resources :reviews, only: [:create, :new]
+    resources :reservations, only: [:create, :new]
   end
   resources :reviews, only: :destroy
+  resources :reservations, only: :destroy
 end

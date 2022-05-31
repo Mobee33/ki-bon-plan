@@ -15,6 +15,10 @@
     <% end %>
   </div>
 
+
+
+<%= link_to("Book activity", new_activity_reservation_path(@activity)) %>
+
 <p>Please leave a comment:</p>
 <%= simple_form_for [ @activity, @review ] do |f| %>
   <%= f.input :comment %>
