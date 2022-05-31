@@ -1,6 +1,6 @@
 class Activity < ApplicationRecord
   CATEGORY = %w(land sea virtual)
-  has_one_attached :image
+  has_one_attached :photo
   belongs_to :user
 
   validates :address, presence: true

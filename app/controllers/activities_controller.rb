@@ -54,7 +54,7 @@ class ActivitiesController < ApplicationController
   private
 
   def activity_params
-    params.require(:activity).permit(:details, :price, :address, :title, :photo, :category, :latitude, :longitude, :image)
+    params.require(:activity).permit(:details, :price, :address, :title, :category, :latitude, :longitude, :photo)
   end
 
   def set_activity
