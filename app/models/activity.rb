@@ -2,6 +2,7 @@ class Activity < ApplicationRecord
   CATEGORY = %w(land sea virtual)
   has_many_attached :photos
   belongs_to :user
+  has_many :reviews, dependent: :destroy
 
   validates :address, presence: true
   geocoded_by :address

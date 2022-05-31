@@ -8,6 +8,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     @review.activity = @activity
+    @review.user = current_user
     if @review.save
       redirect_to activity_path(@activity)
     else
@@ -17,6 +18,7 @@ class ReviewsController < ApplicationController
 
   def destroy
     @review =review.find(params[:id])
+    @review.user.id = current_user.id
     @review.destroy
     redirect_to activity_path(@review.activity)
   end
