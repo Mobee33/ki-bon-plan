@@ -3,7 +3,9 @@
     <p><%= @activity.details %></p>
     <p><%= @activity.price %></p>
     <p><%= @activity.address %></p>
-    <%= cl_image_tag @activity.photo.key, height: 300, width: 400, crop: :fill %>
+    <% @activity.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
     <% if current_user %>
       <% if @activity.user.id == current_user.id %>
         <%= link_to("Edit", edit_activity_path(@activity)) %>
