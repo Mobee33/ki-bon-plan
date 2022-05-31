@@ -3,7 +3,13 @@
     <p><%= @activity.details %></p>
     <p><%= @activity.price %></p>
     <p><%= @activity.address %></p>
-    <%= image_tag @activity.photo %>
+    <%= cl_image_tag @activity.photo.key, height: 300, width: 400, crop: :fill %>
+    <% if current_user %>
+      <% if @activity.user.id == current_user.id %>
+        <%= link_to("Edit", edit_activity_path(@activity)) %>
+        <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>
+      <% end %>
+    <% end %>
   </div>
 
 <div style="width: 100%; height: 500px;"
@@ -11,10 +17,3 @@
   data-mapbox-markers-value="<%= @marker.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
-
-<% if current_user %>
-  <% if @activity.user.id == current_user.id %>
-    <%= link_to("Edit", edit_activity_path(@activity)) %>
-    <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>
-  <% end %>
-<% end %>

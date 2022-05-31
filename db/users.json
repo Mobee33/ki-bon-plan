@@ -1,0 +1,27 @@
+{ "entries": [
+  {
+    "email": "mail@yahoo.com",
+    "password": "123456"
+  },
+  {
+    "email": "mail@hotmail.org",
+    "password": "1234567"
+  },
+  {
+    "email": "mail@google.com",
+    "password": "12345678"
+  },
+  {
+    "email": "mail@wazza.org",
+    "password": "123456789"
+  },
+  {
+    "email": "mail12@yahoo.com",
+    "password": "1234567891"
+  },
+  {
+    "email": "mail5@hotmail.org",
+    "password": "12345678912"
+  }
+]
+}

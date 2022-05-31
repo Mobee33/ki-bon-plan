@@ -5,26 +5,28 @@ filepath = "db/activities.json"
 activities_serialized = File.read(filepath)
 activities = JSON.parse(activities_serialized)
 
+file_user = "db/users.json"
+users_serialized = File.read(file_user)
+users = JSON.parse(users_serialized)
+
 puts "clearing database"
 Activity.destroy_all
 User.destroy_all
+
 puts "creating activity"
 i = 0
+user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users["entries"][i]["password"]}")
 
-user1 = User.create(email: "mail@yahoo.com", password: "123456")
-user2 = User.create(email: "mail@hotmail.org", password: "1234567")
-user3 = User.create(email: "mail@google.com", password: "12345678")
-user4 = User.create(email: "mail@wazza.org", password: "123456789")
-user5 = User.create(email: "mail12@yahoo.com", password: "1234567891")
-user6 = User.create(email: "mail5@hotmail.org", password: "12345678912")
-
-user = [user1, user2, user3, user4, user5, user6].sample
-Activity.create!(title: "#{activities["entries"][0]["title"]}", details: "#{activities["entries"][0]["details"]}", address: "#{activities["entries"][0]["address"]}", price: "#{activities["entries"][0]["price"]}", user_id: "#{user.id}", photo: "#{activities["entries"][0]["photo"]}")
+photo = activities["entries"][i]["photo"]
+file = URI.open("#{photo}")
+Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", user_id: "#{user1.id}").photo.attach(io: file, filename: 'activity.jpg', content_type: 'image/jpg')
 
 5.times do
   i += 1
-  user = [user1, user2, user3, user4, user5, user6].sample
-  Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", user_id: "#{user.id}", photo: "#{activities["entries"][i]["photo"]}")
+  user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users["entries"][i]["password"]}")
+  photo = activities["entries"][i]["photo"]
+  file = URI.open("#{photo}")
+  Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", user_id: "#{user1.id}").photo.attach(io: file, filename: "activity.jpg", content_type: 'image/jpg')
 end
 
 puts "activities created"
