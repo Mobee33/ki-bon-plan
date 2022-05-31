@@ -5,6 +5,7 @@
   Categories:
   <%= f.select :category, Activity::CATEGORY %>
   <%= f.input :price %>
+  <%= f.input :image, as: :file %>
   <%= f.input :photo %>
   <%= f.submit "Submit", class: "btn btn-primary" %>
 <% end %>

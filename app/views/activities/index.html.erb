@@ -14,3 +14,11 @@
     </div>
   <% end %>
 </div>
+
+
+<%= cl_image_tag("https://res.cloudinary.com/dr14y9ctv/image/upload/v1653964268/m0o8p8n3wd8tbfxwbyca.jpg",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("https://res.cloudinary.com/dr14y9ctv/image/upload/v1653964275/vl04hz6z7l60hpizwgav.jpg",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
