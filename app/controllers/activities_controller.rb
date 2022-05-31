@@ -19,6 +19,7 @@ class ActivitiesController < ApplicationController
       lat: @activity.latitude,
       lng: @activity.longitude
     }]
+    @review = Review.new
   end
 
   def new
