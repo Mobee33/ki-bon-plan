@@ -3,6 +3,7 @@ class Activity < ApplicationRecord
   has_many_attached :photos
   belongs_to :user
   has_many :reservations, dependent: :destroy
+  has_many :reviews, dependent: :destroy
 
   validates :address, presence: true
   geocoded_by :address

@@ -7,6 +7,7 @@
       <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
     <% end %>
     <% if current_user %>
+      <%= link_to 'Leave a review', new_activity_review_path(@activity) %>
       <% if @activity.user.id == current_user.id %>
         <%= link_to("Edit", edit_activity_path(@activity)) %>
         <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>
@@ -15,12 +16,29 @@
   </div>
 
 
+
 <%= link_to("Book activity", new_activity_reservation_path(@activity)) %>
 
+<p>Please leave a comment:</p>
+<%= simple_form_for [ @activity, @review ] do |f| %>
+  <%= f.input :comment %>
+  <%= f.input :rating, collection: 0..5 %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+<% end %>
+<%= link_to("Back to homepage", activities_path) %>
 
+  <ul class="list-group">
+  <% @activity.reviews.each do |review| %>
+    <li class="list-group-item"><%= review.comment %></li>
+    <li class="list-group-item"><%= '⭐' * review.rating %></li>
+    <br>
+  <% end %>
+</ul>
 
 <div style="width: 100%; height: 500px;"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @marker.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
+
+<%= link_to "activity", activities_path %>

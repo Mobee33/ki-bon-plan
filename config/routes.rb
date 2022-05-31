@@ -5,9 +5,7 @@ Rails.application.routes.draw do
   resources :activities do
     resources :reviews, only: [:create, :new]
     resources :reservations, only: [:create, :new]
-
   end
-
   resources :reviews, only: :destroy
   resources :reservations, only: :destroy
 end

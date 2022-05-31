@@ -18,6 +18,7 @@ class ReviewsController < ApplicationController
 
   def destroy
     @review =review.find(params[:id])
+    @review.user.id = current_user.id
     @review.destroy
     redirect_to activity_path(@review.activity)
   end
