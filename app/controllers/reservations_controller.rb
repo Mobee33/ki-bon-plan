@@ -10,6 +10,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
     @reservation.activity = @Activity
     @reservation.user = current_user
+    @review = Review.new
     if @reservation.save
       redirect_to activity_path(@activity)
     else
