@@ -10,3 +10,16 @@
   background: #1BCB7F;
   color: white;
 }
+
+.btn-banner {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #000000;
+  transition: background 0.3s ease;
+}
+
+.btn-banner:hover {
+  background: #1BCB7F;
+  color: white;
+}
