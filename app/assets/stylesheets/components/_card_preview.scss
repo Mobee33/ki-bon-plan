@@ -1,9 +1,9 @@
 .card_preview {
-
+  margin: 40px 40px 40px 40px;
   p {
-    font-size: 30px;
-
-
+    font-size: 20px;
+    text-align: justify;
+    margin: 4px;
   }
   img {
     width: 400px;
@@ -11,4 +11,26 @@
     object-fit: cover;
   }
 
+  .info {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+}
+
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 100px;
+  grid-row-gap: px;
+
+}
+
+.map {
+  width: 100%;
+  height: 50%;
+  margin-right: 12px;
 }
