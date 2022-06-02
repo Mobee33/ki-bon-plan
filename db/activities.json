@@ -5,7 +5,7 @@
     "address": "Floreal, Curepipe",
     "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_Bowfighters_Game_L.jpg",
     "price": 200,
-    "Category": "Land"
+    "category": "Land"
   },
   {
     "title": "SUPER SUP RACE",
@@ -13,7 +13,7 @@
     "address": "Riambel, Chemin-Grenier",
     "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_Super_SUP_Race_L.jpg",
     "price": 500,
-    "Category": "Sea"
+    "category": "Sea"
   },
   {
     "title": "BOAT RACE",
@@ -21,7 +21,7 @@
     "address": "Tamarin, Black River",
     "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_DIY_Boat_Race_L.jpg",
     "price": 350,
-    "Category": "Sea"
+    "category": "Sea"
   },
   {
     "title": "DRONE ADVENTURE",
@@ -29,7 +29,7 @@
     "address": "Le Morne, Black River",
     "photo": "https://images.unsplash.com/photo-1606111197124-71ec337e7dff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
     "price": 600,
-    "Category": "Virtual"
+    "category": "Virtual"
   },
   {
     "title": "FORMULA ONE",
@@ -37,7 +37,7 @@
     "address": "Valleé des Couleurs, Black River",
     "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_DIY_Formula_One_L.jpg",
     "price": 200,
-    "Category": "Land"
+    "category": "Land"
   },
   {
     "title": "AMAZING RACE - MAURITIUS HISTORY",
@@ -45,8 +45,9 @@
     "address": "Mahebourg, Grand Port",
     "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_Amazing_Race_L.jpg",
     "price": 150,
-    "Category": "Land"
+    "category": "Land"
   }
+
   // {
   //   "title": "ZIPLINE ACTIVITY + VISIT AT LA VALLÉE DES COULEURS NATURE PARK",
   //   "details": "Nature lovers are bound to love Vallée des Couleurs. It offers a unique experience with the indigenous fauna and flora alongside various fun activities and excursions catering for all ages. Visitors are treated with a range of natural landscapes, including plateaus, mountains, valleys, craters and crater-lakes.",

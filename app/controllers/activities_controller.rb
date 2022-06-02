@@ -2,10 +2,12 @@ class ActivitiesController < ApplicationController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show]
 
-
   def index
-    @activities = Activity.all
-
+    if params[:query].present?
+      @activities = Activity.global_search(params[:query])
+    else
+      @activities = Activity.all
+    end
     # @markers = @activities.geocoded.map do |activity|
     #   {
     #     lat: activity.latitude,
