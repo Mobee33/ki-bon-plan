@@ -58,39 +58,45 @@
 </div>
 
 <div class="d-flex justify-content-around containerhome">
-  <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
-      <%= image_tag "land.png" %>
-    <div class="card-body card-body-home">
-      <h5 class="card-title"><strong>Land Activities</strong></h5>
-      <p class="card-text">Discover all the best land activities.</p>
+  <%= link_to controller: "activities", query: "Land" do%>
+    <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
+        <%= image_tag "land.png" %>
+      <div class="card-body card-body-home">
+        <h5 class="card-title"><strong>Land Activities</strong></h5>
+        <p class="card-text">Discover all the best land activities.</p>
+      </div>
     </div>
-  </div>
+  <% end %>
 
-  <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
-    <%= image_tag "sea.png" %>
-    <div class="card-body card-body-home">
-      <h5 class="card-title"><strong>Sea Activities</strong></h5>
-      <p class="card-text">We offer some of the best water sports activities.</p>
+  <%= link_to controller: "activities", query: "Sea" do%>
+    <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
+      <%= image_tag "sea.png" %>
+      <div class="card-body card-body-home">
+        <h5 class="card-title"><strong>Sea Activities</strong></h5>
+        <p class="card-text">We offer some of the best water sports activities.</p>
+      </div>
     </div>
-  </div>
+  <% end %>
 
-
-  <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
-    <%= image_tag "indoor.jpg" %>
-    <div class="card-body card-body-home">
-      <h5 class="card-title"><strong>Indoor Activities</strong></h5>
-      <p class="card-text">Browse through our fine selection of indoor activities</p>
+  <%= link_to controller: "activities", query: "Indoor" do%>
+    <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
+      <%= image_tag "indoor.jpg" %>
+      <div class="card-body card-body-home">
+        <h5 class="card-title"><strong>Indoor Activities</strong></h5>
+        <p class="card-text">Browse through our fine selection of indoor activities</p>
+      </div>
     </div>
-  </div>
+  <% end %>
 
-
-  <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
-    <%= image_tag "vr.png" %>
-    <div class="card-body card-body-home">
-      <h5 class="card-title"><strong>Vr Activities</strong></h5>
-      <p class="card-text">Try our brand new VR activities. You gonna get your mind blown!</p>
+  <%= link_to controller: "activities", query: "Virtual" do%>
+    <div class="card-home img-hover-zoom" style="width: 18rem; height: 18rem;">
+      <%= image_tag "vr.png" %>
+      <div class="card-body card-body-home">
+        <h5 class="card-title"><strong>Vr Activities</strong></h5>
+        <p class="card-text">Try our brand new VR activities. You gonna get your mind blown!</p>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
 
 

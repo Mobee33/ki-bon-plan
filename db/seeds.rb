@@ -22,7 +22,7 @@ user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users
 
 photo = activities["entries"][i]["photo"]
 file = URI.open("#{photo}")
-Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", user_id: "#{user1.id}").photos.attach(io: file, filename: 'activity.jpg', content_type: 'image/jpg')
+Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", category: "#{activities["entries"][i]["category"]}",user_id: "#{user1.id}").photos.attach(io: file, filename: 'activity.jpg', content_type: 'image/jpg')
 
 #This code allows us to just insert new entries in the json files without bothering with changing the number of the times the loop needs to repeat itself
 count = "#{activities["entries"].count - 1}".to_i
@@ -31,7 +31,7 @@ count.times do
   user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users["entries"][i]["password"]}")
   photo = activities["entries"][i]["photo"]
   file = URI.open("#{photo}")
-  Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", user_id: "#{user1.id}").photos.attach(io: file, filename: "activity.jpg", content_type: 'image/jpg')
+  Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}",category: "#{activities["entries"][i]["category"]}", user_id: "#{user1.id}").photos.attach(io: file, filename: "activity.jpg", content_type: 'image/jpg')
 end
 
 puts "activities created"
