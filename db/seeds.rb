@@ -18,22 +18,20 @@ User.destroy_all
 # Creating database
 # (REFACTORED) This code allows us to just insert new entries in the json files without bothering with changing the number of the times the loop needs to repeat itself
 puts "creating activities"
-count = "#{activities["entries"].count}".to_i
+countdown = "#{activities["entries"].count}".to_i
 i = 0
-count.times do
+countdown.times do
   user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users["entries"][i]["password"]}")
-  photo = activities["entries"][i]["photo"]
-  file = URI.open("#{photo}")
-  Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}",category: "#{activities["entries"][i]["category"]}", user_id: "#{user1.id}").photos.attach(io: file, filename: "activity.jpg", content_type: 'image/jpg')
+  acti1 = Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}",category: "#{activities["entries"][i]["category"]}", user_id: "#{user1.id}")
+  j = 0
+  countdown2 = "#{activities["entries"][i]["photo"].count}".to_i
+  countdown2.times do
+    photo = activities["entries"][i]["photo"][j]
+    file = URI.open("#{photo}")
+    acti1.photos.attach(io: file, filename: "activity.jpg#{j}", content_type: 'image/jpg')
+    j += 1
+  end
   i += 1
 end
 
 puts "activities created"
-
-
-
-# user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users["entries"][i]["password"]}")
-
-# photo = activities["entries"][i]["photo"]
-# file = URI.open("#{photo}")
-# Activity.create!(title: "#{activities["entries"][i]["title"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}", category: "#{activities["entries"][i]["category"]}",user_id: "#{user1.id}").photos.attach(io: file, filename: 'activity.jpg', content_type: 'image/jpg')
