@@ -16,16 +16,18 @@
 <div class="grid-container1">
   <% @activities.each do |activity| %>
     <div class="grid-item">
+      <%= link_to activity_path(activity) do%>
       <div class="card-activity">
-          <%= cl_image_tag activity.photos[0].key, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag activity.photos[0].key, height: 300, width: 400, crop: :fill %>
         <div class="card-activity-infos">
           <div class="card-activity-description">
-            <h2><%= link_to activity.title, activity_path(activity) %></h2>
-            <p><%= activity.details %></p>
+            <h2><%= activity.title %></h2>
+            <p><%= activity.short_description %></p>
           </div>
           <h2 class="card-activity-pricing"><%= activity.address%><br> Rs:<%= activity.price %></h2>
         </div>
       </div>
+      <% end %>
     </div>
   <% end %>
 </div>

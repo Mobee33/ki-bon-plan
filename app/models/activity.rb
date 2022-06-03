@@ -1,5 +1,5 @@
 class Activity < ApplicationRecord
-  CATEGORY = %w(land sea virtual)
+  CATEGORY = %w(land sea indoor virtual)
   has_many_attached :photos
   belongs_to :user
   has_many :reservations, dependent: :destroy
