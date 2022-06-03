@@ -131,10 +131,11 @@
     <h1><strong>activities to do?  Perfect!
     </strong></h1>
     <br>
-    <a class="btn btn-flat btn-banner" href="#"><strong>Take a leap of faith!</strong></a>
+    <% x = Activity.count  %>
+    <% arr = (1..x).to_a.sample %>
+    <a class="btn btn-flat btn-banner" href='/activities/<%= arr %>'><strong>Take a leap of faith!</strong></a>
   </div>
 </div>
-
 
 <div class="footer">
   <div class="footer-links">
@@ -144,6 +145,7 @@
     <a href="#"><i class="fab fa-twitter"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
+
   <div class="footer-copyright">
     This footer is made with <i class="fas fa-heart"></i> by the team Anubatir
   </div>
