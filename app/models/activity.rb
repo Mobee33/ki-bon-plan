@@ -6,6 +6,11 @@ class Activity < ApplicationRecord
   has_many :reviews, dependent: :destroy
 
   validates :address, presence: true
+  validates :title, presence: true
+  validates :short_description, presence: true
+  validates :details, presence: true
+  validates :price, presence: true
+
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
 
