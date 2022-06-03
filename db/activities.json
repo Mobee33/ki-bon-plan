@@ -3,7 +3,7 @@
     "title": "BOWFIGHTERS GAME",
     "details": "Bowfighters® Archery Combat Game is an extremely popular corporate team-building game. Two teams meet on the arena for a series of archery battles. Each player gets a bow, a mask, and foam-tipped arrows. The interactive game provides excellent opportunity to participate in the archery combat in a safe and fun way. Focused on teamwork and strategy combined with pure, adrenaline-pumping fun, it creates an unforgettable experience!",
     "address": "Floreal, Curepipe",
-    "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_Bowfighters_Game_L.jpg",
+    "photo": ["https://teambuilding.mu/images/landing/Corporate_Team_Building_Bowfighters_Game_L.jpg"],
     "price": 200,
     "category": "Land"
   },
@@ -11,7 +11,7 @@
     "title": "SUPER SUP RACE",
     "details": "A great team building activity at the beach: stand up paddle board race! Fantastic adrenaline pumping competition to be organised on its own, and in combination with other beach games for larger groups (Bowfighters® Tournament, Lucky Shot®, KanJam Relay, Beach Volley, etc). Option: bottle of sparkling wine for the race winners!",
     "address": "Riambel, Chemin-Grenier",
-    "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_Super_SUP_Race_L.jpg",
+    "photo": ["https://teambuilding.mu/images/landing/Corporate_Team_Building_Super_SUP_Race_L.jpg"],
     "price": 500,
     "category": "Sea"
   },
@@ -19,7 +19,7 @@
     "title": "BOAT RACE",
     "details": "Enjoy the chance of being at the beach to the full and engage into the Do It Yourself Boat Race! This is a perfect team building program with roles for everyone. Teams have to come up with innovative ideas to build the boat, design visual identity and get ready for the final challenge - Boat Race on the freshly build vessels!",
     "address": "Tamarin, Black River",
-    "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_DIY_Boat_Race_L.jpg",
+    "photo": ["https://teambuilding.mu/images/landing/Corporate_Team_Building_DIY_Boat_Race_L.jpg"],
     "price": 350,
     "category": "Sea"
   },
@@ -27,7 +27,7 @@
     "title": "DRONE ADVENTURE",
     "details": "Drone Aventure® offers to discover Mauritius from a drone through a virtual reality mask. This regulated activity is operated in exclusive partnership with a licensed drone pilot for adventures to be experienced in certain hotels in Mauritius, on a meeting place in the West and in the North of Mauritius. Finally, Drone Aventure offers Escapes, a kind of one-day 'road trip' to explore the Island to discover 3 of the most breathtaking places, in the company of a drone pilot.",
     "address": "Le Morne, Black River",
-    "photo": "https://images.unsplash.com/photo-1606111197124-71ec337e7dff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+    "photo": ["https://images.unsplash.com/photo-1606111197124-71ec337e7dff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"],
     "price": 600,
     "category": "Virtual"
   },
@@ -35,7 +35,7 @@
     "title": "FORMULA ONE",
     "details": "This activity is ideal for very large groups. Each team is going to built a Formula One racing car based on their unique engineering and design! After finishing the decoration and branding the team has to develop its race tactics and get ready for the Grand Prix Race!",
     "address": "Valleé des Couleurs, Black River",
-    "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_DIY_Formula_One_L.jpg",
+    "photo": ["https://teambuilding.mu/images/landing/Corporate_Team_Building_DIY_Formula_One_L.jpg"],
     "price": 200,
     "category": "Land"
   },
@@ -43,18 +43,17 @@
     "title": "AMAZING RACE - MAURITIUS HISTORY",
     "details": "Amazing Race is not just a fun adventure activity. Participants will follow the unique historical path of the Mauritian society and dive into the day to day life of modern Mauritius. Tailor-made scenarios with no limits to your creativity.",
     "address": "Mahebourg, Grand Port",
-    "photo": "https://teambuilding.mu/images/landing/Corporate_Team_Building_Amazing_Race_L.jpg",
+    "photo": ["https://teambuilding.mu/images/landing/Corporate_Team_Building_Amazing_Race_L.jpg"],
     "price": 150,
     "category": "Land"
+  },
+  {
+  "title": "ZIPLINE ACTIVITY + VISIT AT LA VALLÉE DES COULEURS NATURE PARK",
+  "details": "Nature lovers are bound to love Vallée des Couleurs. It offers a unique experience with the indigenous fauna and flora alongside various fun activities and excursions catering for all ages. Visitors are treated with a range of natural landscapes, including plateaus, mountains, valleys, craters and crater-lakes.",
+  "address": "Chamouny, Mauritius",
+  "photo": ["https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-14.jpg", "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-9.jpg", "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-1.jpg"],
+  "price": 150,
+  "Category": "Land"
   }
-
-  // {
-  //   "title": "ZIPLINE ACTIVITY + VISIT AT LA VALLÉE DES COULEURS NATURE PARK",
-  //   "details": "Nature lovers are bound to love Vallée des Couleurs. It offers a unique experience with the indigenous fauna and flora alongside various fun activities and excursions catering for all ages. Visitors are treated with a range of natural landscapes, including plateaus, mountains, valleys, craters and crater-lakes.",
-  //   "address": "Chamouny, Mauritius",
-  //   "photo": "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-14.jpg", "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-9.jpg", "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-1.jpg"],
-  //   "price": 150,
-  //   "Category": "Land"
-  // }
 ]
 }

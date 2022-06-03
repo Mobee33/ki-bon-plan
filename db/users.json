@@ -22,6 +22,10 @@
   {
     "email": "mail5@hotmail.org",
     "password": "12345678912"
+  },
+  {
+    "email": "mail6@hotmail.org",
+    "password": "12345678912"
   }
 ]
 }
