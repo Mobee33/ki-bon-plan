@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 4px;
-  column-gap: 24px;
   margin: 8px 24px;
 }
 
@@ -14,34 +13,37 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  height: 48vh;
+  height: 49vh;
+  width: 22vw;
   margin-bottom: 12px;
   margin-top: 12px;
   border-radius: 16px;
   box-shadow: 4px 4px 8px #ccc5c5ad;
+
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: rgba(13, 20, 101, 0.538);
+  }
+
+  p{
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+    margin-left: 8px;
+    color: rgba(14, 20, 80, 0.693);
+    font-size: 13px;
+  }
 }
 
 .card-activity > img {
-  height: 56%;
+  height: 50%;
   width: 100%;
   object-fit: cover;
 }
-
-.card-activity h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  margin-top: 8px;
-  margin-left: 8px;
-}
-
-.card-activity p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-  margin-left: 8px;
-}
-
 
 .card-activity .card-trip-infos {
   padding: 16px;
@@ -55,4 +57,17 @@
 
 a {
   text-decoration: none;
+}
+
+.card-activity:hover {
+  box-shadow: 2px 2px 15px rgba(128, 59, 59, 0.305);
+
+  h2{
+    color:#EB416D
+  }
+
+  p{
+    color: rgba(0, 0, 0, 0.716);
+    opacity: 0.8;
+  }
 }

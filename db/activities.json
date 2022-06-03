@@ -61,6 +61,51 @@
   "photo": ["https://media.gettyimages.com/photos/guy-smiling-with-hands-on-zip-line-over-tree-tops-picture-id142430623?k=20&m=142430623&s=612x612&w=0&h=K17PLwT43Z-GFfd-wcACPWwd-6BZvhEoJ00FHJBNFPg=","https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-14.jpg", "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-9.jpg", "https://deals.mu/wp-content/uploads/2021/06/la-vallee-des-couleurs-nature-park-1.jpg","https://media.gettyimages.com/photos/tourists-slide-down-a-steel-cable-at-a-tea-garden-during-midautumn-picture-id1341657969?k=20&m=1341657969&s=612x612&w=0&h=EuloCZoDqqFkpo4Lahb2pANWd4OgQnlNPuwyaRvaqdY=","https://media.gettyimages.com/photos/freedom-adult-man-tourist-wearing-casual-clothing-on-zip-line-or-in-picture-id1023592802?k=20&m=1023592802&s=612x612&w=0&h=hPnUTiqSbWTIEUQfhOW2hI2_D3SELhzfqDUm8qCTV-s="],
   "price": 150,
   "Category": "Land"
+  },
+  {
+  "title": "Spicy Story. Mystery of Pierre Poivre",
+  "short_description": "Challenge yourself and your friends to one of the most incredible and eye-opening adventures on the island!",
+  "details": "Pierre Poivre was a French botanist, explorer and a memorable personality in Mauritian history. His life's goal was to find valuable oriental spices for his unique plantation on Île-de-France (the old name for Mauritius). Become part of Pierre's closest team. Your goal is to find the ‘golden’ nut, which is hidden in Poivre’s office, and plant it, hereby starting his historic plantation! But you will have to be quick – in 59 minutes the nut will dry up and will not be able to grow!",
+  "address": "Moka, Mauritius",
+  "photo": ["https://static.wixstatic.com/media/2bea9d_d5f026e0ca6a4d2caf3960441235a789.jpg/v1/fill/w_565,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_d5f026e0ca6a4d2caf3960441235a789.jpg", "https://static.wixstatic.com/media/2bea9d_c2f59957e9e9492393ef9a3e0602c748~mv2.jpg/v1/fill/w_236,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/spicy.jpg", "https://static.wixstatic.com/media/2bea9d_06cddd09d30a47248549a8fa0bae3f96.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_06cddd09d30a47248549a8fa0bae3f96.jpg", "https://static.wixstatic.com/media/2bea9d_ff9e7e8bbae44fbf8773602ed82f1984.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_ff9e7e8bbae44fbf8773602ed82f1984.jpg"],
+  "price": 250,
+  "Category": "Indoor"
+  },
+  {
+  "title": "Prison Break",
+  "short_description": "Try to break free before time runs out",
+  "details": "You and your friends are unjustly sentenced and locked away in a prison cell. According to prison legend, three prisoners managed to successfully escape from the cell by fooling the guards. How they managed it is a mystery that the jailors were never able to solve. Maybe you will have more luck? The guards are absent and the new shift starts in one hour. You don’t have long to discover how they escaped and slip away!​",
+  "address": "Moka, Mauritius",
+  "photo": ["https://static.wixstatic.com/media/2bea9d_ab6e1fca1bf34c218fefa464f869de37.jpg/v1/fill/w_451,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_ab6e1fca1bf34c218fefa464f869de37.jpg","https://static.wixstatic.com/media/2bea9d_1453a6454dad4a7385221eabfd86c33e.jpg/v1/fill/w_599,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_1453a6454dad4a7385221eabfd86c33e.jpg", "https://static.wixstatic.com/media/2bea9d_6b28353fcb174519887a8cdfaaeab2c2.jpg/v1/fill/w_599,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_6b28353fcb174519887a8cdfaaeab2c2.jpg", "https://static.wixstatic.com/media/2bea9d_2d10f3206f7b48a384e1ed7a04abf0d8.jpg/v1/fill/w_1290,h_400,al_c,q_85,usm_0.66_1.00_0.01/2bea9d_2d10f3206f7b48a384e1ed7a04abf0d8.jpg"],
+  "price": 250,
+  "Category": "Indoor"
+  },
+  {
+  "title": "Hunter`s Hut. Save the last Dodo!",
+  "short_description": "Whilst looking for the long lost Dodo, you stumble across a strange hunter’s hut in the forest",
+  "details": "Whilst looking for the long lost Dodo, you stumble across a strange hunter’s hut in the forest. Your intuition is right – this hunter is creepy. Judging from the inside of the hut, it appears he was obsessed with birds and had a blood lust to kill every last one of them!Free the caged birds, find the last remaining Dodo egg and keep an eye on the clock. The hunter will be back at sunset… with his gun!​",
+  "address": "Moka, Mauritius",
+  "photo": ["https://static.wixstatic.com/media/2bea9d_ff21b5852fff4c099f6163714441a1c0.jpg/v1/fill/w_1290,h_400,al_c,q_85,usm_0.66_1.00_0.01/2bea9d_ff21b5852fff4c099f6163714441a1c0.jpg", "https://static.wixstatic.com/media/2bea9d_79b79da022334232b3af482e5d1b0dbc.jpg/v1/fill/w_533,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_79b79da022334232b3af482e5d1b0dbc.jpg", "https://static.wixstatic.com/media/2bea9d_3b02355cc2694279a8acdcf5ad508c0b.jpg/v1/fill/w_533,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_3b02355cc2694279a8acdcf5ad508c0b.jpg", "https://static.wixstatic.com/media/2bea9d_3b02355cc2694279a8acdcf5ad508c0b.jpg/v1/fill/w_533,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_3b02355cc2694279a8acdcf5ad508c0b.jpg"],
+  "price": 250,
+  "Category": "Indoor"
+  },
+  {
+  "title": "The legend of the mysterious mental hospital",
+  "short_description": "Everyone has gone koukou and you're the only sane person around. What's next is up to you",
+  "details": "The legend of the mysterious mental hospital with very strange medical experiments become a real... soft walls, straitjackets, and mad neighbors induce you to think about escape... but perhaps it's not at all what it seems",
+  "address": "Moka, Mauritius",
+  "photo": ["https://static.wixstatic.com/media/2bea9d_75b677acfa1a4154872db35adf99f656~mv2.jpg/v1/fill/w_543,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_75b677acfa1a4154872db35adf99f656~mv2.jpg", "https://static.wixstatic.com/media/2bea9d_dbadbadcf35441f6b2d0923dba72df8a~mv2.jpg/v1/fill/w_786,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_dbadbadcf35441f6b2d0923dba72df8a~mv2.jpg", "https://static.wixstatic.com/media/2bea9d_dec2c0898b124417bc12394988b9d001~mv2.jpg/v1/fill/w_599,h_400,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_dec2c0898b124417bc12394988b9d001~mv2.jpg", "https://static.wixstatic.com/media/2bea9d_b1a71742852b427696be20cc7d6c0164~mv2.jpg/v1/fill/w_1290,h_400,al_c,q_85,usm_0.66_1.00_0.01/2bea9d_b1a71742852b427696be20cc7d6c0164~mv2.jpg"],
+  "price": 250,
+  "Category": "Indoor"
+  },
+  {
+  "title": "They thought you were dead and buried but you're still kicking!",
+  "short_description": "This is our the most challenging quest. Why? Because it`s not an escape room, this is escape from coffins!",
+  "details": "This game is not about the ghosts or scary prisoners, this is about the fear that is hidden in your head. Just imagine - 45 minutes. 2 coffins. You and your buddy. and only one chance to escape - for both of you! Try to challenge yourself and your friend... and close your eyes",
+  "address": "Moka, Mauritius",
+  "photo": ["https://static.wixstatic.com/media/2bea9d_1f95d7980359442c925e62c2835c5d2c~mv2.jpg/v1/fill/w_575,h_354,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_1f95d7980359442c925e62c2835c5d2c~mv2.jpg", "https://static.wixstatic.com/media/2bea9d_a0b6f6e4a87b41d08541381f404e25ed~mv2.jpg/v1/fill/w_663,h_443,al_c,q_80,usm_0.66_1.00_0.01/2bea9d_a0b6f6e4a87b41d08541381f404e25ed~mv2.jpg", "https://static.wixstatic.com/media/2bea9d_a9aaad62ae0b496b9e86702b25793db7~mv2.jpg/v1/fill/w_1426,h_443,al_c,q_85,usm_0.66_1.00_0.01/2bea9d_a9aaad62ae0b496b9e86702b25793db7~mv2.jpg"],
+  "price": 250,
+  "Category": "Indoor"
   }
 ]
 }

@@ -16,7 +16,7 @@
 <div class="grid-container1">
   <% @activities.each do |activity| %>
     <div class="grid-item">
-      <%= link_to activity_path(activity) do%>
+      <%= link_to activity_path(activity), class:"img1-hover-zoom" do%>
       <div class="card-activity">
         <%= cl_image_tag activity.photos[0].key, height: 300, width: 400, crop: :fill %>
         <div class="card-activity-infos">
