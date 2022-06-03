@@ -131,8 +131,9 @@
     <h1><strong>activities to do?  Perfect!
     </strong></h1>
     <br>
-    <% x = Activity.count  %>
-    <% arr = (1..x).to_a.sample %>
+    <% x = Activity.first.id%>
+    <% y = Activity.last.id%>
+    <% arr = (x..y).to_a.sample %>
     <a class="btn btn-flat btn-banner" href='/activities/<%= arr %>'><strong>Take a leap of faith!</strong></a>
   </div>
 </div>
