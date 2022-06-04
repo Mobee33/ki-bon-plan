@@ -25,9 +25,9 @@
                       required: true,
                       autofocus: true,
                       input_html: { autocomplete: "new-username" }%>
-          <%= f.input :photos,
+          <%= f.input :avatar,
                       as: :file,
-                      input_html: { multiple: true }%>
+                      required: true %>
           <%= f.input :password,
                       hint: "leave it blank if you don't want to change it",
                       required: false,
