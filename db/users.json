@@ -1,51 +1,7 @@
 { "entries": [
   {
-    "email": "mail@yahoo.com",
+    "email": "admin@mail.com",
     "password": "123456"
-  },
-  {
-    "email": "mail@hotmail.org",
-    "password": "1234567"
-  },
-  {
-    "email": "mail@google.com",
-    "password": "12345678"
-  },
-  {
-    "email": "mail@wazza.org",
-    "password": "123456789"
-  },
-  {
-    "email": "mail12@yahoo.com",
-    "password": "1234567891"
-  },
-  {
-    "email": "mail5@hotmail.org",
-    "password": "12345678912"
-  },
-  {
-    "email": "mail6@hotmail.org",
-    "password": "12345678912"
-  },
-  {
-    "email": "mail1@google.com",
-    "password": "12345678"
-  },
-  {
-    "email": "mail2@google.com",
-    "password": "12345678"
-  },
-  {
-    "email": "mail3@google.com",
-    "password": "12345678"
-  },
-  {
-    "email": "mail4@google.com",
-    "password": "12345678"
-  },
-  {
-    "email": "mail5@google.com",
-    "password": "12345678"
   }
 ]
 }
