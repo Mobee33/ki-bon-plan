@@ -16,7 +16,7 @@
     <div class="grid-item">
       <%= link_to activity_path(activity), class:"img1-hover-zoom" do%>
       <div class="card-activity">
-        <%= cl_image_tag activity.photos[0].key, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag activity.photos[0].key%>
         <div class="card-activity-infos">
           <div class="card-activity-description">
             <h2><%= activity.title %></h2>
