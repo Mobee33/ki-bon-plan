@@ -30,6 +30,14 @@
     </div>
     <br>
 
+    <h1><strong>Reviews</strong></h1>
+          <ul class="list-group">
+          <% @activity.reviews.each do |review| %>
+            <li class="list-group-item"><%= review.comment %></li>
+            <li class="list-group-item"><%= '⭐' * review.rating %></li>
+            <br>
+          <% end %>
+        </ul>
         <p>Please leave a comment:</p>
         <%= simple_form_for [ @activity, @review ] do |f| %>
           <%= f.input :comment %>
@@ -38,16 +46,9 @@
           <%= f.submit "Submit review", class: "btn btn-primary" %>
         <% end %>
         <br>
-        <%= link_to("Back to homepage", activities_path) %>
+        <%= link_to("Back to activities", activities_path) %>
 
 
-          <ul class="list-group">
-          <% @activity.reviews.each do |review| %>
-            <li class="list-group-item"><%= review.comment %></li>
-            <li class="list-group-item"><%= '⭐' * review.rating %></li>
-            <br>
-          <% end %>
-        </ul>
 
     </div>
 
