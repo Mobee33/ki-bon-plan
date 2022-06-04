@@ -1,0 +1,30 @@
+.bannerprofile {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  width: 100%;
+  height: 410px;
+  position: relative;
+
+  h1 {
+    line-height: 39px;
+    color: white;
+  }
+
+  .containerbanner {
+    margin-left: 46px;
+  }
+}
+
+.picavatar {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  position: absolute;
+  left: 44px;
+  top: 57vh;
+  border-style: solid;
+  border-color: #e3eaf08f;
+  border-width: 6px;
+  object-fit: cover;
+}

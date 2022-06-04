@@ -9,6 +9,7 @@
         <%= cl_image_tag @activity.photos[0].key%>
       </div>
       <div class="photos_container2">
+      <%= cl_image_tag @activity.photos[0].key, style:"height:100px, width:auto"; %>
         <% @activity.photos.drop(1).each do |photo| %>
             <%= cl_image_tag photo.key,class:"sidephotos col", style:"width:120px, height:250px" %>
           <% end %>
