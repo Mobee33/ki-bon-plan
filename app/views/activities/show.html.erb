@@ -5,34 +5,41 @@
     <p class="info">Rs. <%= @activity.price %></p>
     <p class="info"><%= @activity.address %></p>
     <div class="photos_container">
-      <%= cl_image_tag @activity.photos[0].key, style:"height:600px, width:auto"; %>
+      <div class="photos_container1">
+        <%= cl_image_tag @activity.photos[0].key%>
+      </div>
+      <div class="photos_container2">
         <% @activity.photos.drop(1).each do |photo| %>
-          <%= cl_image_tag photo.key,class:"sidephotos col", style:"width:120px, height:250px" %>
-        <% end %>
+            <%= cl_image_tag photo.key,class:"sidephotos col", style:"width:120px, height:250px" %>
+          <% end %>
+      </div>
     </div>
+    <br>
 
     <% if current_user %>
       <% link_to 'Leave a review', new_activity_review_path(@activity) %>
       <% if @activity.user.id == current_user.id %>
-        <%= link_to("Edit", edit_activity_path(@activity)) %>
-        <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>
-      <% end %>
+          <%= link_to("Edit", edit_activity_path(@activity)) %>
+          <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>      <% end %>
     <% end %>
+    <br>
+    <br>
 
-    <div class="btn btn-primary">
+    <div class="btn-flat btn-small">
       <%= link_to("Book activity", new_activity_reservation_path(@activity)) %>
     </div>
-
+    <br>
 
         <p>Please leave a comment:</p>
         <%= simple_form_for [ @activity, @review ] do |f| %>
           <%= f.input :comment %>
           <%= f.input :rating, collection: 0..5 %>
+          <br>
           <%= f.submit "Submit review", class: "btn btn-primary" %>
         <% end %>
+        <br>
         <%= link_to("Back to homepage", activities_path) %>
 
-        <%= link_to("Book activity", new_activity_reservation_path(@activity)) %>
 
           <ul class="list-group">
           <% @activity.reviews.each do |review| %>
@@ -42,8 +49,6 @@
           <% end %>
         </ul>
 
-
-        <%= link_to "activity", activities_path %>
     </div>
 
     <div style="width: 100%; height: 500px;"
@@ -51,5 +56,4 @@
       data-mapbox-markers-value="<%= @marker.to_json %>"
       data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
-
 </div>

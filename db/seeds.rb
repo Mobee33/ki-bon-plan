@@ -22,7 +22,7 @@ countdown = activities["entries"].count
 i = 0
 countdown.times do
   user1 = User.create(email: "#{users["entries"][i]["email"]}", password: "#{users["entries"][i]["password"]}")
-  acti1 = Activity.create!(title: "#{activities["entries"][i]["title"]}", short_description: "#{activities["entries"][i]["short_description"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}",category: "#{activities["entries"][i]["category"]}", user_id: "#{user1.id}")
+  acti1 = Activity.create!(title: "#{activities["entries"][i]["title"].upcase}", short_description: "#{activities["entries"][i]["short_description"]}", details: "#{activities["entries"][i]["details"]}", address: "#{activities["entries"][i]["address"]}", price: "#{activities["entries"][i]["price"]}",category: "#{activities["entries"][i]["category"]}", user_id: "#{user1.id}")
   j = 0
   countdown2 = activities["entries"][i]["photo"].count
   countdown2.times do
