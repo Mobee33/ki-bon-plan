@@ -1,0 +1,74 @@
+<% if @user.banner.key %>
+  <div class="bannerprofile" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @user.banner.key %>')">
+  </div>
+<% else %>
+<div class="bannerprofile" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://i.pinimg.com/originals/21/3f/13/213f13131ea438cb95ac5fcad21d0bb2.jpg')">
+</div>
+<% end %>
+
+<% if @user.banner.key %>
+  <%= cl_image_tag (@user.avatar.key), class:"picavatar"%>
+<% else %>
+  <%= image_tag "https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png", class:"picavatar" %>
+<% end %>
+
+<div class="col-md-8">
+              <div class="card mb-3" style="postion: relative; top:25vh; left: 15px; background-color: transparent; border: transparent;">
+                <div class="card-body" style="postion: relative; top: 28vh; left: -431px">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">First Name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= @user.first_name %>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Last Name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= @user.last_name %>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Username</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= @user.username %>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= @user.email %>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">About me</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      <%= @user.about_me %>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Activities Booked</h6>
+                    </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 btn btn-info">
+                      <%= link_to("Edit", edit_user_path(@user))%>
+                    </div>
+                  </div>
+                </div>
+              </div>
