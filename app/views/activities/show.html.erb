@@ -1,29 +1,29 @@
 
-  <div class="card_preview">
-    <p class="info"><%= @activity.title %></p>
-    <p><%= @activity.details %></p>
-    <p class="info">Rs. <%= @activity.price %></p>
-    <p class="info"><%= @activity.address %></p>
-    <div class="photos_container">
-      <div class="photos_container1">
-        <%= cl_image_tag @activity.photos[0].key%>
-      </div>
-      <div class="photos_container2">
-        <% @activity.photos.drop(1).each do |photo| %>
-            <%= cl_image_tag photo.key,class:"sidephotos col", style:"width:120px, height:250px" %>
-          <% end %>
-      </div>
+<div class="card_preview">
+  <p class="info"><%= @activity.title %></p>
+  <p><%= @activity.details %></p>
+  <p class="info">Rs. <%= @activity.price %></p>
+  <p class="info"><%= @activity.address %></p>
+  <div class="photos_container">
+    <div class="photos_container1">
+      <%= cl_image_tag @activity.photos[0].key%>
     </div>
-    <br>
+    <div class="photos_container2">
+      <% @activity.photos.drop(1).each do |photo| %>
+        <%= cl_image_tag photo.key,class:"sidephotos col", style:"width:350px; height:300px;" %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-    <% if current_user %>
-      <% link_to 'Leave a review', new_activity_review_path(@activity) %>
-      <% if @activity.user.id == current_user.id %>
-          <%= link_to("Edit", edit_activity_path(@activity)) %>
-          <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>      <% end %>
+<% if current_user %>
+  <% link_to 'Leave a review', new_activity_review_path(@activity) %>
+    <% if @activity.user.id == current_user.id %>
+      <%= link_to("Edit", edit_activity_path(@activity)) %>
+      <%= link_to "Delete", activity_path(@activity), method: :delete, data: { confirm: "Are you sure?"} %>      <% end %>
     <% end %>
-    <br>
-    <br>
+<br>
+<br>
 
     <div class="btn-flat btn-small">
       <%= link_to("Book activity", new_activity_reservation_path(@activity)) %>
